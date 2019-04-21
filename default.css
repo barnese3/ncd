@@ -1,0 +1,411 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #000;
+}
+
+#head {
+	background-image: url("ncd-head.png");
+	background-size: contain;
+	height: 130vh;
+	background-attachment: fixed;
+	transition: 0.5s ease;
+	position: relative;
+}
+
+#alcohol {
+	background-image: url(ncd-alcohol.png);
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: -5px;
+    padding-right: 10px;
+    margin-top: -5px;
+}
+
+
+#alcohol {
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  transform: rotateY(90deg) rotateZ(0deg);
+  transform-origin: -200% 100%;
+
+  -webkit-transition: transform 2000ms, opacity2000ms;
+  -moz-transition: transform 2000ms, opacity2000ms;
+  -ms-transition: transform 2000ms, opacity2000ms;
+  -o-transition: transform 2000ms, opacity2000ms;
+  transition: transform 2000ms, opacity2000ms;
+}
+
+.slide-in #alcohol {
+  opacity: 1;
+  transform: none;
+  transition-delay: 900ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+#asterisk {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 111111;
+}
+
+
+#asterisk:before {
+  margin-right: 10px;
+}
+
+#asterisk:after {
+  margin-left: 10px;
+}
+
+
+#asterisk {
+  opacity: 0;
+  transform-origin: 50% 4%;
+  animation: spin 1s forwards;
+  -o-animation: spin 1s forwards;
+  -moz--animation: spin 1s forwards;
+  -webkit-animation: spin 1s forwards;
+
+  animation-delay: .3s;
+  -o-animation-delay: .3s;
+  -moz--animation-delay: .3s;
+  -webkit-animation-delay: .3s;
+
+}
+
+#asterisk::before, #asterisk::after {
+  transform-origin: center center;
+  animation: grow .5s forwards;
+  -o-animation: grow .5s forwards;
+  -moz--animation: grow .5s forwards;
+  -webkit-animation: grow .5s forwards;
+
+  animation-delay: .8s;
+  -o-animation-delay: .8s;
+  -moz--animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+}
+
+
+#asterisk {
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+}
+
+#asterisk img {
+	height: 20vh;
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    width: 40%;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+#store {
+/*	background-image: url("ncd-store.png");
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	min-height: 100vh;
+/*	margin-left: 25vw;*/
+}
+
+#store img {
+	height: 100vh;
+}
+
+
+#words img {
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	height: 100vh;
+}
+
+
+h2 {
+	color: yellow;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: 5s ease;
+	font-family: 'Slabo 27px', serif;
+  font-size: 2vw;
+}
+
+h2 span {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+h2 span i {
+  padding-left: 5px;
+}
+
+#words {
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  transform: rotateY(90deg) rotateZ(0deg);
+  transform-origin: -200% 100%;
+
+  -webkit-transition: transform 2000ms, opacity2000ms;
+  -moz-transition: transform 2000ms, opacity2000ms;
+  -ms-transition: transform 2000ms, opacity2000ms;
+  -o-transition: transform 2000ms, opacity2000ms;
+  transition: transform 2000ms, opacity2000ms;
+}
+
+.slide-in2 #words {
+  opacity: 1;
+  transform: none;
+  transition-delay: 100ms;
+}
+
+.slide-in3 h2 {
+	opacity: 1;
+  font-family: 'Slabo 27px', serif;
+}
+
+
+#words {
+      width: 25vw;
+      height: 100vh;
+      display: inline-block;
+    background-image: url("http://bgmarketingsolutions.com/wp-content/uploads/2014/03/photodune-4702197-black-chalkboard-m2.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#words p {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2vw;
+    width: 90%;
+    font-family: 'Slabo 27px', serif;
+    line-height: 160%;
+    letter-spacing: 0.8px;
+}
+
+#words p span {
+  font-size: 2.5vw;
+}
+
+#store-pic {
+      width: 73vw;
+      height: 100vh;
+      display: inline-block;
+    background-image: url("ncd-store.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#chalk {
+  background-image: url("http://bgmarketingsolutions.com/wp-content/uploads/2014/03/photodune-4702197-black-chalkboard-m2.jpg");
+      height: 300px;
+    width: 100vw;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.phonering {
+  -webkit-animation: phonering 1s infinite ease-in-out;
+  animation: phonering 1s infinite ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  display: inline-block;
+}
+
+@-webkit-keyframes phonering {
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-15deg) scale(1) skew(1deg);
+                transform:rotate(-15deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(15deg) scale(1) skew(1deg);
+                transform:rotate(15deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-15deg) scale(1) skew(1deg);
+                transform:rotate(-15deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(15deg) scale(1) skew(1deg);
+                transform:rotate(15deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes phonering {
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-15deg) scale(1) skew(1deg);
+                transform:rotate(-15deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(15deg) scale(1) skew(1deg);
+                transform:rotate(15deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-15deg) scale(1) skew(1deg);
+                transform:rotate(-15deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(15deg) scale(1) skew(1deg);
+                transform:rotate(15deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+  #store-pic {
+    width: 72vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #store-pic,
+  #words {
+    width: 100vw;
+  }
+
+  #words {
+    height: 30vh;
+    margin-bottom: -5px;
+  }
+
+  #store-pic {
+    height: 50vh;
+  }
+
+  #store {
+    min-height: 50vh;
+  }
+
+  #head {
+    height: 60vh;
+  }
+
+  #asterisk img {
+    height: 10vh;
+}
+
+  h2 span {
+    border: 1px solid #fff;
+  }
+}
