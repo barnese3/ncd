@@ -8,9 +8,9 @@ $( document ).ready(function() {
 
 var element_position3 = $('#store').offset().top;
 var screen_height3 = $(window).height();
-var activation_offset3 = 1;//determines how far up the the page the element needs to be before triggering the function
+var activation_offset3 = 0.7;//determines how far up the the page the element needs to be before triggering the function
 var activation_point3 = element_position3 - (screen_height3 * activation_offset3);
-var max_scroll_height3 = $('body').height() - screen_height3;//-5 for a little bit of buffer
+var max_scroll_height3 = $('body').height() - screen_height3 -5;//-5 for a little bit of buffer
 
 
 $(window).on('scroll', function() {
