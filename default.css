@@ -16,8 +16,16 @@ body {
 	position: relative;
 }
 
+#alcohol-back {
+  background-image: url("http://bgmarketingsolutions.com/wp-content/uploads/2014/03/photodune-4702197-black-chalkboard-m2.jpg");
+    background-size: cover;
+    position: absolute;
+/*    height: 200px;*/
+    width: 100vw;
+}
+
 #alcohol {
-	background-image: url(ncd-alcohol.png);
+/*	background-image: url(clipped.png);*/
     position: absolute;
     height: 100%;
     width: 100vw;
@@ -26,6 +34,14 @@ body {
     margin-left: -5px;
     padding-right: 10px;
     margin-top: -5px;
+    z-index: 9999;
+    text-align: center;
+}
+
+#alcohol img {
+  width: 70vw;
+  height: auto;
+  margin-top: 8px;
 }
 
 
