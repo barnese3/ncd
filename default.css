@@ -424,4 +424,12 @@ h2 span i {
   h2 span {
     border: 1px solid #fff;
   }
+
+  #words p {
+    font-size: 3vw;
+  }
+
+  #words p span {
+    font-size: 4vw;
+  }
 }
